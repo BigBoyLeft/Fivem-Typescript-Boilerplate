@@ -1,8 +1,6 @@
-# Rebirth Framework
+# A Typescript Boilerplate
 
 <img src="https://raw.githubusercontent.com/BigBoyLeft/Rebirth/main/src/code/assets/rebirth.png" style="right:0" align="right" width="250px">
-
-## A Typescript Boilerplate
 
 This Boilerplate integrates esbuilds super fast and optimal solution over webpack.
 
