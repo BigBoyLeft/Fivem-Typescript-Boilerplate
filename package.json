@@ -1,0 +1,72 @@
+{
+    "name": "resource",
+    "version": "1.0.0",
+    "description": "",
+    "main": "build.js",
+    "scripts": {
+        "build": "node ./build.js --mode=production",
+        "buildW": "node ./build.js --mode=production --watch",
+        "buildD": "node ./build.js --mode=development",
+        "buildDW": "node ./build.js --mode=development --watch"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@citizenfx/client": "^2.0.5440-1",
+        "@citizenfx/server": "^2.0.5440-1",
+        "node-fetch": "^3.2.3"
+    },
+    "devDependencies": {
+        "@ptkdev/logger": "^1.8.0",
+        "@types/node": "^17.0.23",
+        "@types/node-fetch": "^2.6.1",
+        "@typescript-eslint/eslint-plugin": "^5.17.0",
+        "@typescript-eslint/parser": "^5.17.0",
+        "esbuild": "^0.14.29",
+        "eslint": "^8.12.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-prettier": "^4.0.0",
+        "prettier": "^2.6.1"
+    },
+    "prettier": {
+        "trailingComma": "es5",
+        "bracketSpacing": true,
+        "arrowParens": "always",
+        "endOfLine": "auto",
+        "htmlWhitespaceSensitivity": "css",
+        "bracketSameLine": true,
+        "jsxSingleQuote": false,
+        "printWidth": 200,
+        "semi": true,
+        "tabWidth": 4
+    },
+    "eslintConfig": {
+        "parser": "@typescript-eslint/parser",
+        "plugins": [
+            "@typescript-eslint",
+            "prettier"
+        ],
+        "extends": [
+            "eslint:recommended",
+            "prettier",
+            "plugin:@typescript-eslint/recommended"
+        ],
+        "parserOptions": {
+            "sourceType": "module",
+            "ecmaVersion": 2020
+        },
+        "env": {
+            "browser": true,
+            "node": true
+        },
+        "rules": {
+            "no-case-declarations": "off",
+            "no-empty-function": "off",
+            "prefer-const": "off",
+            "prettier/prettier": "error",
+            "react/no-unescaped-entities": "off",
+            "@typescript-eslint/no-explicit-any": "off"
+        }
+    }
+}
