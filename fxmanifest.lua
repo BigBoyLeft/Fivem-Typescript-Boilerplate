@@ -6,12 +6,5 @@ description ''
 author 'left#2118'
 version '1.0.0'
 
-ui_page 'build/index.html'
-
-files {
-    'build/index.html',
-    'build/**/*',
-}
-
 client_script 'build/client/*.js'
 server_script 'build/server/*.js'
