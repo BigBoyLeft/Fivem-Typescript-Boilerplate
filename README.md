@@ -10,7 +10,6 @@ This Boilerplate integrates esbuilds super fast and optimal solution over webpac
 2. Javascript/Typescript
 3. Understanding module bunders such as `Webpack` `ESBuild`
 4. Node.JS Package Managers such as [NPM](https://www.npmjs.com/) | [YARN](https://yarnpkg.com/)
-5. Experience in Database Programs such as [MongoDB](https://www.mongodb.com)
 
 ## Boilerplate Commands
 
