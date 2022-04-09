@@ -22,4 +22,4 @@ This Boilerplate integrates esbuilds super fast and optimal solution over webpac
 
 ##### Run these commands with NPM (``npm run {command}``) or YARN (``yarn {command}``)
 
-###### Copyright &copy; 2022 Rebirth Networks owned by [Left](https://github.com/BigBoyLeft). Rebirth Networks and its associates are not affiliated with or endorsed by Rockstar North, Take-Two Interactive or other rightsholders. Any trademarks used belong to their respective owners.
+###### Copyright &copy; 2022 Rebirth Networks and Founder [Left](https://github.com/BigBoyLeft). Rebirth Networks and its associates are not affiliated with or endorsed by Rockstar North, Take-Two Interactive or other rightsholders. Any trademarks used belong to their respective owners.
