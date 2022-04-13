@@ -5,6 +5,8 @@
     "main": "build.js",
     "scripts": {
         "build": "node ./build.js --mode=production",
+        "buildP": "npm run buildUI && npm run build",
+        "buildUI": "cd src/ui && npm run UI:Build",
         "buildW": "node ./build.js --mode=production --watch",
         "buildD": "node ./build.js --mode=development",
         "buildDW": "node ./build.js --mode=development --watch"

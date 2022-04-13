@@ -1,6 +1,8 @@
+import "@citizenfx/client";
+
 class Client {
     constructor() {
-        console.log('Client Started');
+        require("./modules/Hud");
     }
 }
 export default new Client();
