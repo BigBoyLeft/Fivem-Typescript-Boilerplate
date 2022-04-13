@@ -1,0 +1,21 @@
+.UI_HUD {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    background: rgba($color: #3b3131, $alpha: 0.8);
+    color: white;
+    display: grid;
+    place-content: center;
+    border-radius: 10px;
+    
+    code {
+        border-radius: 10px;
+        margin: 25px;
+        padding: 10px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        background: rgba($color: #3b3131, $alpha: 1);
+    }
+}

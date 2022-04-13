@@ -1,15 +1,18 @@
 import { connect } from "react-redux";
 import useAppEvent from "../../Services/useAppEvent";
+import './index.scss'
 
 const Hud = ({ visible, data, setVisible, setData }) => {
-    useAppEvent("hud", "setVisible", (data: any) => setVisible(data.visible));
+    useAppEvent("hud", "setVisible", (data: any) => {
+        setVisible(JSON.parse(data.visible));
+        console.log(data.visible)
+    });
     useAppEvent("hud", "setData", (data: any) => setData(data.data));
-
     return (
         visible && (
-            <div>
-                <div>{data}</div>
-            </div>
+            <pre className="UI_HUD">
+                <code>{data}</code>
+            </pre>
         )
     );
 };

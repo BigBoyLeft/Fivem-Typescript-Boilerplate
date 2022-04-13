@@ -1,6 +1,8 @@
 const INITIAL_STATE = {
-    visible: false,
-    data: {},
+    visible: true,
+    data: `function reactUI() {
+    return "This is all working :) Yay | 'Hello World' <=== cant forget this one";
+}`,
 };
 
 function reducer(state = INITIAL_STATE, action: any) {
@@ -15,6 +17,8 @@ function reducer(state = INITIAL_STATE, action: any) {
                 ...state,
                 data: action.payload,
             };
+        default:
+            return state;
     }
 }
 
