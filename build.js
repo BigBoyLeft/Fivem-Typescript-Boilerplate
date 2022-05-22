@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 "use strict";
 const esbuild = require("esbuild");
 const path = require("path");
@@ -10,7 +11,6 @@ const isWatch = process.argv.findIndex((Item) => Item === "--watch") >= 0;
         {
             label: "client",
             platform: "browser",
-            inject: ["./src/shared/index.ts"],
             entryPoints: ["./src/client/index.ts"],
             outdir: `build/client`,
             target: ["chrome93"],
@@ -19,7 +19,6 @@ const isWatch = process.argv.findIndex((Item) => Item === "--watch") >= 0;
         {
             label: "server",
             platform: "node",
-            inject: ["./src/shared/index.ts"],
             entryPoints: ["./src/server/index.ts"],
             outdir: `build/server`,
             target: ["node16"],

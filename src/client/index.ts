@@ -1,3 +1,5 @@
+import "@citizenfx/client"
+
 class Client {
     constructor() {
         console.log('Client Started');

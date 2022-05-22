@@ -1,8 +1,7 @@
 fx_version 'cerulean'
 game {'gta5'}
 
-title ''
-description ''
+title 'Fivem Free to use Typescript Boilerplate'
 author 'left#2118'
 version '1.0.0'
 
